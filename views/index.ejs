@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Alex Garcia</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+</head>
+
+<body>
+  <h1>Estadisticas</h1>
+  <table>
+    <tr>
+      <th>capaAnalizada</th>
+      <th>campoAnalizado</th>
+      <th>recuento</th>
+      <th>valoresUnicos</th>
+      <th>valorMinimo</th>
+      <th>valorMaximo</th>
+      <th>intervalo</th>
+      <th>suma</th>
+      <th>valorMedio</th>
+      <th>mediana</th>
+      <th>desviacionEstandar</th>
+      <th>coeficienteVariacion</th>
+      <th>minoria</th>
+      <th>mayoria</th>
+      <th>primerCuartil</th>
+      <th>tercerCuartil</th>
+      <th>valoresNulos</th>
+      <th>rangoIntercuartil</th>
+    </tr>
+
+    <% data.forEach(file => { %>
+    <tr>
+      <td>
+        <%= file.capaAnalizada %>
+      </td>
+      <td>
+        <%= file.campoAnalizado %>
+      </td>
+      <td>
+        <%= file.recuento %>
+      </td>
+      <td>
+        <%= file.valoresUnicos %>
+      </td>
+      <td>
+        <%= file.valorMinimo %>
+      </td>
+      <td>
+        <%= file.valorMaximo %>
+      </td>
+      <td>
+        <%= file.intervalo %>
+      </td>
+      <td>
+        <%= file.suma %>
+      </td>
+      <td>
+        <%= file.valorMedio %>
+      </td>
+      <td>
+        <%= file.mediana %>
+      </td>
+      <td>
+        <%= file.desviacionEstandar %>
+      </td>
+      <td>
+        <%= file.coeficienteVariacion %>
+      </td>
+      <td>
+        <%= file.minoria %>
+      </td>
+      <td>
+        <%= file.mayoria %>
+      </td>
+      <td>
+        <%= file.primerCuartil %>
+      </td>
+      <td>
+        <%= file.tercerCuartil %>
+      </td>
+      <td>
+        <%= file.valoresNulos %>
+      </td>
+      <td>
+        <%= file.rangoIntercuartil %>
+      </td>
+    </tr>
+    <% }); %>
+  </table>
+
+</body>
+
+</html>
