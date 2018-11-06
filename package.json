@@ -12,7 +12,7 @@
     "lint": "eslint --cache --color --ext .jsx,.js src"
   },
   "keywords": [],
-  "author": "sergio",
+  "author": "alex",
   "license": "MIT",
   "config": {
     "forge": {
@@ -32,7 +32,9 @@
         "packageManager": "npm"
       },
       "electronWinstallerConfig": {
-        "name": "alex_aeronautica"
+        "noMsi": true,
+        "exe": "alex-app.exe",
+        "setupExe": "AlexAppInstaller.exe"
       },
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
