@@ -1,6 +1,6 @@
 {
-  "name": "alex-aeronautica",
-  "productName": "alex-aeronautica",
+  "name": "alexaero",
+  "productName": "alexaero",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": "src/index.js",
@@ -29,12 +29,11 @@
         ]
       },
       "electronPackagerConfig": {
-        "packageManager": "npm"
+        "packageManager": "npm",
+        "asar": true
       },
       "electronWinstallerConfig": {
-        "noMsi": true,
-        "exe": "alex-app.exe",
-        "setupExe": "AlexAppInstaller.exe"
+        "noMsi": false
       },
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},

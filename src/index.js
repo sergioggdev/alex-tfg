@@ -100,6 +100,7 @@ function parseFolderData(ruta) {
 
             Promise.all(getData)
               .then(res => {
+                res.files = files;
                 response(res);
               })
               .catch(err => {
@@ -118,6 +119,7 @@ function parseFolderData(ruta) {
             .map(i => i.split('</p>')[0]);
 
           const obj = {
+            files: data.files,
             capaAnalizada: null,
             campoAnalizado: null,
             recuento: null,
