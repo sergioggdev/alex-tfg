@@ -85,7 +85,8 @@ export default class App extends Component {
                 <tbody>
                   {this.state.response.data.map((file, index) => (
                     <tr key={index}>
-                      <td>{file.files[index]}</td>–<td>{file.capaAnalizada}</td>
+                      <td>{file.files[index]}</td>
+                      <td>{file.capaAnalizada}</td>
                       <td>{file.campoAnalizado}</td>
                       <td>{file.recuento}</td>
                       <td>{file.valoresUnicos}</td>
